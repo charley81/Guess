@@ -31,5 +31,78 @@ h1 {
 }
 
 main {
+  margin: 4rem auto 0;
+  padding: 1rem;
+  max-width: 500px;
+}
+
+.guess {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.button-section {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  display: inline;
+  width: 50%;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.again {
+  border: 1px solid transparent;
+}
+
+.again:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-light);
+  color: var(--color-light)
+}
+
+.submit {
+  background-color: transparent;
+  border: 1px solid var(--color-light);
+  color: var(--color-light)
+}
+
+.submit:hover {
+  border: 1px solid transparent;
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+.info-section {
   margin-top: 4rem;
+}
+
+.info-section p {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    
+  }
+
+  .input-section {
+    width: 50%;
+  }
+
+  .info-section {
+    margin: 0;
+  }
 }
