@@ -1,5 +1,35 @@
+:root {
+  --color-dark: #383838;
+  --color-light: #F2F2F2;
+  --color-success: #066163;
+  --transition: all 0.3s ease;
+  --border-radius: 3px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+main {
+  margin-top: 4rem;
 }
