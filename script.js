@@ -43,5 +43,21 @@ const submit = document
       document.querySelector('.guess').disabled = true
       document.querySelector('.number').textContent = randomNumber
       document.querySelector('body').style.backgroundColor = '#066163'
+
+      if (score > highscore) {
+        document.querySelector('.high-score').textContent = score
+      }
     }
+  })
+
+const again = document
+  .querySelector('.again')
+  .addEventListener('click', function () {
+    randomNumber = Math.floor(Math.random() * 20) + 1
+    document.querySelector('.guess').disabled = false
+    score = 20
+    document.querySelector('.current-score').textContent = score
+    document.querySelector('.guess').value = ''
+    document.querySelector('.guess').focus()
+    document.querySelector('body').style.backgroundColor = '#383838'
   })
